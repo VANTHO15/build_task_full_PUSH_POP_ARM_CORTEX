@@ -54,8 +54,8 @@ typedef struct
 	uint32_t psp_value;
 	uint32_t block_count;
 	uint8_t current_state;
-	void (*task_handler)(void);
-}TCB_t;
+	void (*task_handler)(void); // giữ địa chỉ của task
+}TCB_t; // Task control block
 
 TCB_t user_tasks[MAX_TASKS];
 
